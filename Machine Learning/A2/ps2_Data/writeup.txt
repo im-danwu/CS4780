@@ -1,0 +1,16 @@
+dgw47, hw389
+9/26/13 at 12:19pm
+
+We have submitted two files of code. One for Question 2 and one for Question 3. For question 3 in Problem3.py line 33, if you uncomment
+"or d >= 11" then the tree will be cut off at depth 10, otherwise it will build a full tree. In the terminal, executing the python file will build a full tree (~30min runtime) and print out the percent error for the full tree running the test instances.
+
+For question 2 we coded it a bit differently in that ALL_INSTANCES combines X_TRAIN, Y_TRAIN into one array. Running Problem2.py from the terminal will build a full tree from the training data and plot a grid of values that are run through the tree to create a color grid showing the positive and negative boundaries. It will then create a plot using the majority vote of 101 trees in the same fashion.
+
+import os
+import numpy as np
+import math
+from sklearn.datasets import load_svmlight_file
+import scipy
+import matplotlib.pyplot as plt
+from pdb import set_trace as ss
+from random import sample

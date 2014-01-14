@@ -1,0 +1,30 @@
+We needed to model the performance of a completely random classifier in order to provide a baseline for our other algorithms. This baseline was useful to help us understand if something was incorrect with our algorithm or dataset. If the algorithm did not perform at least as well as the baseline, it would be a very obvious sign that there was an error in our approach or implementation. The random baseline therefore provided a minimum threshold of accuracy that our methods could improve on.
+
+The baseline we used gave an accuracy of around 25% for four genres and five features. This makes sense as we just randomly assigned one of the four classes to each instance.
+
+
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.95.6762&rep=rep1&type=pdf
+-In this work, features are derived from the MIDI transcriptions of the song collection.
+-small core of ﬁve coarse-grain feature classes: melodic intervals, instruments, instrument classes and drumkits, meter/time changes, note extension
+-6 genres, 300 MIDI song test set
+-Naive Bayes, VFI(Voting Feature Intervals), J48 tdidt using PART algo for thresholds, NNge(kNN-like), JRIP(uses a propositional rule learner?)
+
+Using Naive Bayes to evaluate performance of features
+Features Precision Recall F-measure
+Instruments (I) 72% 72% 71%
+Instruments Classes (IC) 61% 64% 61%
+M/K Changes (MKC) 41% 39% 34%
+Melodic Intervals (MI) 36% 32% 25%
+Notes Extension (NX) 26% 16% 16%
+
+http://cs229.stanford.edu/proj2011/HaggbladeHongKao-MusicGenreClassification.pdf
+-kNN, k-means, multi-class SVM, neural networks
+-jazz, metal, pop, classical
+-using only MFCC
+-around 80-100% except jazz was around 60-70% for SVM, kNN, k-means, and 100% for neural networks, neural networks got 76% for metal
+
+http://www.jaist.ac.jp/~kshirai/papers/dang09a.pdf
+-classifying "sentiments and moods" of songs
+-lyrics of songs in our collection are obtained from LyricWiki website (www.lyricwiki.org)
+-SVM classifier, Naive Bayes classifier and graph-based method
+-only 2-4% improvement for all 3
